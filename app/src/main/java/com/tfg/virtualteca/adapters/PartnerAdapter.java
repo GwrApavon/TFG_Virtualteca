@@ -41,7 +41,7 @@ public class PartnerAdapter extends BaseAdapter {
         String full_name;
         LayoutInflater shown = LayoutInflater.from(context);
         View element = shown.inflate(R.layout.partner, viewGroup, false);
-
+/*
         TextView full_name_tv = element.findViewById(R.id.full_name);
         full_name = partners.get(i).getName() + partners.get(i).getSurname1() + partners.get(i).getSurname2() ;
         full_name_tv.setText(full_name);
@@ -51,7 +51,7 @@ public class PartnerAdapter extends BaseAdapter {
 
         TextView email = element.findViewById(R.id.email);
         email.setText(partners.get(i).getEmail());
-
+*/
         return element;
     }
 

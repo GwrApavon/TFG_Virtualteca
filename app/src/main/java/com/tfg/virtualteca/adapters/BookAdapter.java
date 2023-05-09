@@ -44,7 +44,7 @@ public class BookAdapter extends BaseAdapter {
 
         LayoutInflater shown = LayoutInflater.from(context);
         View element = shown.inflate(R.layout.book, viewGroup, false);
-
+/*
         TextView title = element.findViewById(R.id.title);
         title.setText(books.get(i).getTitle());
 
@@ -62,7 +62,7 @@ public class BookAdapter extends BaseAdapter {
 
         TextView synopsis = element.findViewById(R.id.synopsis);
         synopsis.setText(books.get(i).getSynopsis());
-
+*/
         return element;
     }
 

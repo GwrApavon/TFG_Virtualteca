@@ -6,21 +6,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-
             android:title="@string/home_menu" />
         <item
             android:id="@+id/nav_books"
-
             android:title="@string/books_menu" />
         <item
             android:id="@+id/nav_partners"
-
             android:title="@string/partner_menu" />
         <item
             android:id="@+id/nav_loans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
             android:title="@string/home_menu" />
     </group>
 </menu>

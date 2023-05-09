@@ -1,9 +1,14 @@
 package com.tfg.virtualteca.DBSettings;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.util.Log;
+
 import androidx.annotation.Nullable;
 
 import com.tfg.virtualteca.elements.Book;
@@ -78,9 +83,10 @@ public class DataBaseBook extends DataBaseSupport {
      */
     public long insertBook(String title, int ISBN, String author, String language, String genre, String editorial, String pbl_date, String synopsis) {
 		long id = 0;
+		SQLiteDatabase db = null;
 		try {
 			DataBaseSupport dbs = new DataBaseSupport(context);
-			SQLiteDatabase db = dbs.getWritableDatabase();
+			db = dbs.getWritableDatabase();
 
 			ContentValues values = new ContentValues();
 			values.put("title", title);
@@ -162,7 +168,7 @@ public class DataBaseBook extends DataBaseSupport {
 				book.setLanguage(bookCursor.getString(4));
 				book.setGenre(bookCursor.getString(5));
 				book.setEditorial(bookCursor.getString(6));
-				book.setPublication_date(bookCursor.getString(7));
+				book.setPbl_date(bookCursor.getString(7));
 				book.setSynopsis(bookCursor.getString(8));
 			}
 		} catch (SQLiteException ex) {

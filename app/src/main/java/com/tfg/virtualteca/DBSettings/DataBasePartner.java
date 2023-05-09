@@ -1,9 +1,14 @@
 package com.tfg.virtualteca.DBSettings;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.util.Log;
+
 import androidx.annotation.Nullable;
 
 import com.tfg.virtualteca.elements.Partner;
@@ -86,9 +91,10 @@ public class DataBasePartner extends DataBaseSupport {
      */
     public long insertPartner(String dni, String name, String surname1, String surname2, String phone_num, String email) {
 		long id = 0;
+		SQLiteDatabase db = null;
 		try {
 			DataBaseSupport dbs = new DataBaseSupport(context);
-			SQLiteDatabase db = dbs.getWritableDatabase();
+			db = dbs.getWritableDatabase();
 
 			ContentValues values = new ContentValues();
 			values.put("dni", dni);

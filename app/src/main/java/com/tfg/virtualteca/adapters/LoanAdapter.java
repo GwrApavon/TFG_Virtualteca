@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import com.tfg.virtualteca.R;
 import com.tfg.virtualteca.elements.Book;
@@ -40,11 +41,11 @@ public class LoanAdapter extends BaseAdapter {
 
         LayoutInflater shown = LayoutInflater.from(context);
         View element = shown.inflate(R.layout.loan, viewGroup, false);
-
+ /*
         //Arreglar para que lo saque de la base de datos
         TextView partner = element.findViewById(R.id.partner);
         int partner_id = Integer.parseInt(String.valueOf(loans.get(i).getId_partner()));
-        String partner_full_name = partner_id.get(i).getName() + partner_id.get(i).getSurname1() + partner_id.get(i).getSurname2()
+        String partner_full_name = partner_id.get(i).getName() + partner_id.get(i).getSurname1() + partner_id.get(i).getSurname2();
         partner.setText(partner_full_name);
        
         //Lo mismo 
@@ -58,7 +59,7 @@ public class LoanAdapter extends BaseAdapter {
         CheckBox devuelto = element.findViewById(R.id.devuelto);
         //si isDevuelto() checkbox marcada else no marcada
         //devuelto.setText(String.valueOf(loans.get(i).isDevuelto()));
-
+*/
         return element;
     }
 
