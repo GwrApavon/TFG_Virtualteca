@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Virtualteca</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="add">Añadir</string>
+    <string name="App_Name">VirtualTeca</string>
+    <string name="Title">Título</string>
+    <string name="Author">Autor</string>
+    <string name="ISBN">ISBN</string>
+    <string name="Genre">Género</string>
+    <string name="editorial">Editorial</string>
+    <string name="Language">Idioma</string>
+    <string name="Save">Guardar</string>
+    <string name="Synopsis">Sinopsis</string>
+    <string name="Name">Nombre</string>
+    <string name="First_Surname">Primer Apellido</string>
+    <string name="Second_Surname">Segundo Apellido</string>
+    <string name="DNI">DNI</string>
+    <string name="Phone_Number">Telefono</string>
+    <string name="Email">E-mail</string>
+    <string name="fin_date">Fecha de finalización</string>
+    <string name="init_date">Fecha de inicio</string>
+    <string name="menu_book">menu_book</string>
+    <string name="books_menu">Libros</string>
+    <string name="home_menu">Inicio</string>
+    <string name="partner_menu">Socios</string>
+    <string name="loan_menu">Préstamos\n</string>
+</resources>
